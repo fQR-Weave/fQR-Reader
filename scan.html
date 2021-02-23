@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fQR Code Scanner</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="scanner_css.css">
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+    <script src="https://unpkg.com/arweave/bundles/web.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet" />
+
+  </head>
+
+
+<body>
+
+<div class="header">
+  <center><h1 onclick="window.location.href='https://fqrweave.tech'" class="logo" style="color: white">fQR Weave</h1></center>
+ 
+  </div>
+</div> <br><br><br><br>
+
+
+<center><div style="border-style: dashed; border-radius: 50px; height: 550px; width: 300px; float: center">
+    <div id="container">
+      <h1>fQR Code Scanner</h1>
+      <h3>Tap on the QR code icon below to launch the scanner</h3>
+
+      
+
+      <a id="btn-scan-qr">
+        <br><br><br>
+        <img src="https://arweave.net/10IkLp6K7f-JpQJ96TzVDGNTLYbrZr8gVYhjOCFaKhs">
+      <a/>
+
+      <canvas hidden="" id="qr-canvas"></canvas>
+
+      <div id="qr-result" hidden="" onchange="readFqr()">
+        <p>item ID:</p>
+        <span id="outputData" ></span>
+      </div>
+    </div> <br>
+  <script src="bundle.js"></script>
+  
+
+      
+</center></div>
+
+    <br><br><br><br>
+
+
+  
+</div>
+  
+</div>    
+  </body>
+ 
+
+</html>
